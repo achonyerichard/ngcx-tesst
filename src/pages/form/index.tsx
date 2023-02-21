@@ -183,7 +183,7 @@ const Form: React.FC = () => {
 
                                 </div>
                             ) : (
-                                <div className='w-full bg-white p-5 shadow-xl rounded-lg'>
+                                <div className='w-full bg-white p-5 shadow-2xl rounded-xl '>
 
                                     <div >
                                         {/* Warning modal */}

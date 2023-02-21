@@ -18,55 +18,53 @@ interface RadarChart {
 const RadarChart: React.FC = () => {
 
   const [radarData, setRadarData] = useState<RadarChart>({
-
     series: [
       {
-        name: 'Income',
-        data: [70, 68, 80, 95, 75, 77] // Jan - Jun
+        name: "Income",
+        data: [70, 68, 80, 95, 75, 77],
       },
       {
-        name: 'Net Worth',
-        data: [90, 72, 62, 65, 80, 75]
+        name: "Net Worth",
+        data: [90, 72, 62, 65, 80, 75], // Jan - Jun
       },
-
-
     ],
-
     options: {
+      colors: ["#F8C04B", "#72E028"],
       chart: {
-        height: 200,
-        type: 'radar',
-        dropShadow: {
-          enabled: false,
-          blur: 1
+        height: 350,
+        type: "radar",
+        menu: false,
+        toolbar: {
+          show: false,
         },
-
+      },
+      title: {
+        text: "",
       },
       stroke: {
-        width: 2
+        width: 2,
       },
       fill: {
-        opacity: 1
+        opacity: 1,
+      },
+      markers: {
+        size: 0,
       },
       xaxis: {
-        categories: ['Jan', 'Feb', 'Mar', 'April', 'May', 'June'],
-
+        categories: ["Jan", "Feb", "March", "April", "May", "June"],
       },
       yaxis: {
-
         show: false,
-
       },
-      colors: ['#FDB528', '#72E128'],
     },
-  })
+  });
 
 
 
 
 
   return (
-    <ReactApexChart options={radarData.options} series={radarData.series} type="radar" height={350} />
+   <div className='py-3'> <ReactApexChart options={radarData.options} series={radarData.series} type="radar" height={260} /></div>
   );
 };
 
