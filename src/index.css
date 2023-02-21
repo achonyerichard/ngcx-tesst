@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input:focus {
+    border-color: #64C623 !important;
+  }
+
+  
