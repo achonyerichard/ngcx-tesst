@@ -174,13 +174,14 @@ const Home = () => {
                 {/* Data Card 5  Starts*/}
 
 
-                <div className="md:w-1/3 bg-white px-5">
+                <div className="md:w-1/3 bg-white p-5">
                   <header className="pt-2">
                     <h1 className="text-xl text-gray-600">FX Radar</h1>
 
                   </header>
                   {/* Radar Chart from Apex Charts */}
-                  <RadarChart /></div>
+                  <RadarChart />
+                  </div>
               </div>
               {/* Data Card 5  Ends*/}
             </section>
